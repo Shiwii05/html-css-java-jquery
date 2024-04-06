@@ -1,0 +1,481 @@
+:root {
+  --primary: rgb(255, 205, 205);
+  --bg: #fafafa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: popins, sans-serif;
+  background-color: #FFF0F5;
+  color: rgb(0, 0, 0,);
+  font-size: 1.3rem;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: #E07292;
+    border-bottom: 1px solid #FFF0F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
+  .nav-logo{
+    width: 50px;
+  }
+  .navbar .navbar-nav a{
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+  .nav .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s linear;
+  } 
+  .navbar .navbar-extra a {
+    color: white;
+    margin: 0 0.5rem;
+    margin-left: 20px;
+  }
+  .navbar .navbar-nav a:hover {
+   color: var(--primary);
+  }
+  #hamburger-menu{
+    display: none;
+  }
+  .pading{
+    width: 100%;
+    height: 100px;
+  }
+  .logo {
+    width: 50px;
+    background-color: white;
+    padding: 18px 8px;
+    border-radius: 50%;
+  }
+  .desc{
+    width: 300px;
+    margin-left: 94px;
+    margin-top: 72px;
+  }
+  .foto-cv{
+    width: 367px;
+    height: 294px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+  }
+  .profil{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+    align-items: center;
+  }
+  .name{
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .about{
+    padding: 0rem 4rem;
+    width: 432px;
+    height: auto;
+  }
+  .content-image{
+    text-align: center;
+  }
+  h2{
+    font-family: Aclonica;
+    font-weight: 400;
+    font-size: 72px;
+    color: #DB7093;
+    padding-left: 40px;
+  }
+  .about-content{
+    text-align: start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 63px 39px 77px 39px;
+  }
+  .about-content li{
+    padding-bottom: 5px;
+  }
+  .text-animate{
+    text-align: center;
+    font-style: italic;
+  }
+  .Contact{
+    padding-left: 40px;
+    padding-bottom: 76px;
+  }
+  .Education h2{
+    padding-top: 270px;
+    text-align: center;
+    padding-bottom: 54px;
+  }
+  .Skill{
+    padding-top: 123px;
+    padding-left: 40px;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .icons{
+    padding-right: 25px;
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .Skill img{
+    width: 100px;
+  }
+  .bg-pink img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  .bg-atas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .tentang{
+    padding-right: 152px;
+  }
+  .Client-testimoni{
+    margin-bottom: 308px;
+    margin-top: 88px;
+    padding-left: 75px;
+  }
+  .Client-testimoni-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .card{
+    background-color: white;
+    width: 544px;
+    height: 380px;
+    border-radius: 24px;
+    margin-right: 88px;
+    padding: 20px 30px 0 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .Client-testimoni img{
+    width: 145px;
+    height: 110px;
+    border-radius: 10px;
+  }
+  .deskripsi{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .pembatas{
+    text-align: center;
+  }
+  .experience{
+    padding-top: 39px;
+  }
+  .experience img{
+    width: 384px;
+    height: 310px;
+  }
+  .hobbies{
+    margin-top: 59px;
+  }
+  .hobbies img{
+    padding: 0px 20px;
+  }
+  .right-col{
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-right: 40px;
+  }
+  .hire-me{
+    padding-top: 184px;
+    text-align: center;
+  }
+  .card img{
+    float: left;
+    padding: 30px;
+  }
+  .pembatas{
+    margin-left: 100px;
+  }
+  .contact .formulir form .input-box .input-field input,
+.contact .formulir form .textarea-field textarea {
+  width: 600px;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: black;
+  background: #ffffff;
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--main-color);
+}
+
+.contact form {
+  max-width: 70rem;
+}
+
+.contact form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+  position: relative;
+  margin: 0.8rem 0;
+}
+
+.contact form .textarea-field {
+  margin-top: 1rem;
+}
+
+.contact form .textarea-field textarea {
+  resize: none;
+}
+
+.contact form .submit-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.contact form .submit-btn button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 50%;
+  background: #DB7093;
+  border-radius: 10px;
+  border: 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  margin-top: 20px;
+}
+
+.contact form .submit-btn button:hover {
+  background-color: #e3caa5;
+  color: #ad8b73;
+}
+/*laptop */
+@media (max-width: 1366px){
+  html{
+    font-size: 75%;
+  }
+}
+/*Tablet */
+@media (max-width: 768px){
+  html {
+    font-size: 62.5%;
+  }
+  .profil{
+  display: inline;
+  }
+  .content-image img {
+    width: 290px;
+    height: 215px;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right:-100%;
+    background-color: rgb(255, 239, 239);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #060606;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem;
+    transform: scaleX(0);
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .about{
+    padding: 5rem;
+  }
+  .deskripsi{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .contact li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact2{
+    margin-left: -8rem;
+  }
+  .Education {
+    margin-left: -8rem;
+  }
+  .Education h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Education ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Skill{
+    margin-top: -13rem;
+  }
+  .Skill h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .imag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .imag img{
+    padding-left: 3rem;
+  }
+  .Contact h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pembatas {
+    display: none;
+  }
+  .exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .ul2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .obp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .hire2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-bottom: 5rem;
+  }
+  .hire-me {
+    margin-top: 8rem;
+  }
+  .hb2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .gb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .Client-testimoni h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .card {
+    font-size: 90%;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    padding: 2rem;
+  }
+  .copyright {
+    padding: 2rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-top: -8rem;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  #hamburger-menu{
+    display: inline-block;
+  }
+}
